@@ -3,6 +3,7 @@ package com.example.pertemuan4.ui.theme
 import android.R
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.HorizontalDivider
@@ -69,6 +70,10 @@ fun FormatDataDiri(modifier: Modifier
             thickness = dimensionResource(id = R.dimen.divider_tipis ))
         color = Color.Darkgrey
 
+    )
+
+    Button(
+        modifier = Modifier.fillMaxWidth(fraction = if),
     )
 
 
