@@ -12,6 +12,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.LineHeightStyle
+import androidx.compose.ui.unit.dp
 
 @Composable
 fun FormatDataDiri(modifier: Modifier
@@ -50,6 +51,20 @@ fun FormatDataDiri(modifier: Modifier
             }
         }
     }
+    OutlinedTextField(
+        value = textAlamat,
+        singleLine = true,
+        modifier = Modifier.width(width= 250.dp),
+        label = { Text(text = "Alamat lengkap")},
+        onValueChange = {
+            textAlamat = it
+        }
 
+
+
+
+
+
+    )
 
 }
