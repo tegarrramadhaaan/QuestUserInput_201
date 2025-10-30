@@ -5,12 +5,16 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.BiasAlignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.unit.dp
 
@@ -57,14 +61,21 @@ fun FormatDataDiri(modifier: Modifier
         modifier = Modifier.width(width= 250.dp),
         label = { Text(text = "Alamat lengkap")},
         onValueChange = {
-            textAlamat = it
-        }
-
-
-
-
-
+            textAlamat = it }
+    )
+    HorizontalDivider(
+        modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_medium),
+            top = dimensionResource(id = R.dimen.padding_small),
+ ))
 
     )
+
+
+
+
+
+
+
+
 
 }
