@@ -75,6 +75,9 @@ fun FormatDataDiri(modifier: Modifier
     Button(
         modifier = Modifier.fillMaxWidth(fraction = if),
         enable = textAlamat.isNotEmpty(),
+        onClick = {
+            nama = textNama
+        }
 
     )
 
