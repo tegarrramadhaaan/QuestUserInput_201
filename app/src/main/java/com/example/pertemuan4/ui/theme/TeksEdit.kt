@@ -77,6 +77,8 @@ fun FormatDataDiri(modifier: Modifier
         enable = textAlamat.isNotEmpty(),
         onClick = {
             nama = textNama
+            alamat = textAlamat
+
         }
 
     )
